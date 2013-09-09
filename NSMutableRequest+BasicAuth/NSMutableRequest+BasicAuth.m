@@ -1,29 +1,17 @@
-NSMutableRequest+BasicAuth
-==========================
+//
+//  NSMutableRequest+BasicAuth.m
+//  ID.me Scan
+//
+//  Created by Arthur Sabintsev on 9/9/13.
+//  Copyright (c) 2013 ID.me, Inc. All rights reserved.
+//
 
-An iOS Objective-C category for performing HTTP Basic Access Authentication, aka *Basic auth*.
+#import "NSMutableRequest+BasicAuth.h"
 
-## Why?
-Most solutions for performing *Basic auth* on iOS involve the use of 3rd party Base64 libraries. A native, independent solution exists with the CFNetworking framework. This category wraps the solution into one clean and reusable method.
+@implementation NSMutableURLRequest (BasicAuth)
 
-## Installation
-- Add the **NSMutableRequest+BasicAuth** folder into your project
-- Import `NSMutableRequest+BasicAuth.h` into your class(es).
-
-## Usage
-- Create an `NSMutableURLRequest` and make sure to set the following properties:
-	- `URL`
-	- `HTTPMethod`
-- Then, call the `basicAuthForRequest:withUsername:andPassword` method with your request.
-- Afterwards, initialize your `NSURLConnection` and load your *Basic auth* request.
-
-## Interface
-``` obj-c
-+ (void)basicAuthForRequest:(NSMutableURLRequest *)request withUsername:(NSString *)username andPassword:(NSString *)password;
-```
-
-## Implementation
-``` obj-c
++ (void)basicAuthForRequest:(NSMutableURLRequest *)request withUsername:(NSString *)username andPassword:(NSString *)password
+{
     // Cast username and password as CFStringRefs via Toll-Free Bridging
     CFStringRef usernameRef = (__bridge CFStringRef)username;
     CFStringRef passwordRef = (__bridge CFStringRef)password;
@@ -43,7 +31,7 @@ Most solutions for performing *Basic auth* on iOS involve the use of 3rd party B
     // Cleanup
     CFRelease(authorizationStringRef);
     CFRelease(authoriztionMessageRef);
-```
+    
+}
 
-## Credit
-Created by [Arthur Ariel Sabintsev](http://www.sabintsev.com) for [ID.me, Inc.](http://www.id.me)
+@end
