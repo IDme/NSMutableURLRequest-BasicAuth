@@ -4,11 +4,12 @@ NSMutableRequest+BasicAuth
 An iOS Objective-C category for performing HTTP Basic Access Authentication, aka *Basic auth*.
 
 ## Why?
-Most solutions for performing *Basic auth* on iOS involve the use of 3rd party Base64 libraries. A native, independent solution exists with the CFNetworking framework. This category wraps the solution into one clean and reusable method.
+Most solutions for performing *Basic auth* on iOS involve the use of 3rd party Base64 libraries. Apple has provided native functions within the CFNetworking framework, removing the need for 3rd party libraries. This category wraps the solution into one clean and reusable method.
 
 ## Installation
 - Add the **NSMutableRequest+BasicAuth** folder into your project
 - Import `NSMutableRequest+BasicAuth.h` into your class(es).
+- Import Apple's `CFNetworking` framework.
 
 ## Usage
 - Create an `NSMutableURLRequest` and make sure to set the following properties:
