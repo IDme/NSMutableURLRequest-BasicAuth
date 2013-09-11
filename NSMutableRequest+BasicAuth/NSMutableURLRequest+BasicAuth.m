@@ -1,12 +1,12 @@
 //
-//  NSMutableRequest+BasicAuth.m
+//  NSMutableURLRequest+BasicAuth.m
 //  ID.me Scan
 //
 //  Created by Arthur Sabintsev on 9/9/13.
 //  Copyright (c) 2013 ID.me, Inc. All rights reserved.
 //
 
-#import "NSMutableRequest+BasicAuth.h"
+#import "NSMutableURLRequest+BasicAuth.h"
 
 @implementation NSMutableURLRequest (BasicAuth)
 

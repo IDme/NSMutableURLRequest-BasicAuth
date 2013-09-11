@@ -1,5 +1,5 @@
 //
-//  NSMutableRequest+BasicAuth.h
+//  NSMutableURLRequest+BasicAuth.h
 //  ID.me Scan
 //
 //  Created by Arthur Sabintsev on 9/9/13.
