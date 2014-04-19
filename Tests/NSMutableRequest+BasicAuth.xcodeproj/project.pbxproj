@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		278BD62E1902837100AE1F41 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BD62D1902837100AE1F41 /* XCTest.framework */; };
+		278BD6301902837100AE1F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BD62F1902837100AE1F41 /* Foundation.framework */; };
+		278BD6321902837100AE1F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BD6311902837100AE1F41 /* UIKit.framework */; };
+		278BD6381902837100AE1F41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 278BD6361902837100AE1F41 /* InfoPlist.strings */; };
+		27AA414D190285F000648714 /* NSMutableURLRequest+BasicAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */; };
+		27AA414E1902870100648714 /* NSMutableRequest_BasicAuth_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		278BD62A1902837000AE1F41 /* NSMutableRequest+BasicAuth_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSMutableRequest+BasicAuth_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		278BD62D1902837100AE1F41 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		278BD62F1902837100AE1F41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		278BD6311902837100AE1F41 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		278BD6351902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSMutableRequest+BasicAuth_Tests-Info.plist"; sourceTree = "<group>"; };
+		278BD6371902837100AE1F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMutableRequest_BasicAuth_Tests.m; sourceTree = "<group>"; };
+		278BD63B1902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableRequest+BasicAuth_Tests-Prefix.pch"; sourceTree = "<group>"; };
+		27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+BasicAuth.h"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
+		27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+BasicAuth.m"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		278BD6271902837000AE1F41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278BD62E1902837100AE1F41 /* XCTest.framework in Frameworks */,
+				278BD6321902837100AE1F41 /* UIKit.framework in Frameworks */,
+				278BD6301902837100AE1F41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278BD61F1902831800AE1F41 = {
+			isa = PBXGroup;
+			children = (
+				27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */,
+				27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */,
+				278BD6331902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests */,
+				278BD62C1902837100AE1F41 /* Frameworks */,
+				278BD62B1902837000AE1F41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		278BD62B1902837000AE1F41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				278BD62A1902837000AE1F41 /* NSMutableRequest+BasicAuth_Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		278BD62C1902837100AE1F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				278BD62D1902837100AE1F41 /* XCTest.framework */,
+				278BD62F1902837100AE1F41 /* Foundation.framework */,
+				278BD6311902837100AE1F41 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		278BD6331902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */,
+				278BD6341902837100AE1F41 /* Supporting Files */,
+			);
+			name = "NSMutableRequest+BasicAuth_Tests";
+			sourceTree = "<group>";
+		};
+		278BD6341902837100AE1F41 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				278BD6351902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Info.plist */,
+				278BD6361902837100AE1F41 /* InfoPlist.strings */,
+				278BD63B1902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		278BD6291902837000AE1F41 /* NSMutableRequest+BasicAuth_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 278BD63E1902837100AE1F41 /* Build configuration list for PBXNativeTarget "NSMutableRequest+BasicAuth_Tests" */;
+			buildPhases = (
+				278BD6261902837000AE1F41 /* Sources */,
+				278BD6271902837000AE1F41 /* Frameworks */,
+				278BD6281902837000AE1F41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSMutableRequest+BasicAuth_Tests";
+			productName = "NSMutableRequest+BasicAuth_Tests";
+			productReference = 278BD62A1902837000AE1F41 /* NSMutableRequest+BasicAuth_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		278BD6201902831800AE1F41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 278BD6231902831800AE1F41 /* Build configuration list for PBXProject "NSMutableRequest+BasicAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 278BD61F1902831800AE1F41;
+			productRefGroup = 278BD62B1902837000AE1F41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				278BD6291902837000AE1F41 /* NSMutableRequest+BasicAuth_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		278BD6281902837000AE1F41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				278BD6381902837100AE1F41 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		278BD6261902837000AE1F41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AA414E1902870100648714 /* NSMutableRequest_BasicAuth_Tests.m in Sources */,
+				27AA414D190285F000648714 /* NSMutableURLRequest+BasicAuth.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		278BD6361902837100AE1F41 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				278BD6371902837100AE1F41 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		278BD6241902831800AE1F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		278BD6251902831800AE1F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		278BD63C1902837100AE1F41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSMutableRequest+BasicAuth_Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "NSMutableRequest+BasicAuth_Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		278BD63D1902837100AE1F41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NSMutableRequest+BasicAuth_Tests-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "NSMutableRequest+BasicAuth_Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		278BD6231902831800AE1F41 /* Build configuration list for PBXProject "NSMutableRequest+BasicAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278BD6241902831800AE1F41 /* Debug */,
+				278BD6251902831800AE1F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		278BD63E1902837100AE1F41 /* Build configuration list for PBXNativeTarget "NSMutableRequest+BasicAuth_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				278BD63C1902837100AE1F41 /* Debug */,
+				278BD63D1902837100AE1F41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 278BD6201902831800AE1F41 /* Project object */;
+}
