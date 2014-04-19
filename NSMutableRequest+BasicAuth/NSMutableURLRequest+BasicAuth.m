@@ -12,6 +12,12 @@
 
 + (void)basicAuthForRequest:(NSMutableURLRequest *)request withUsername:(NSString *)username andPassword:(NSString *)password
 {
+    // Complain at invalid usernames
+    if ([username rangeOfString:@":"].location != NSNotFound)
+    {
+        [NSException raise:NSInvalidArgumentException format:@"Usernames for HTTP Basic Auth cannot contain a colon character: %@", username];
+    }
+    
     // Cast username and password as CFStringRefs via Toll-Free Bridging
     CFStringRef usernameRef = (__bridge CFStringRef)username;
     CFStringRef passwordRef = (__bridge CFStringRef)password;
