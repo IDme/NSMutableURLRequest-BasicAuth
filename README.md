@@ -59,7 +59,7 @@ pod 'NSMutableURLRequest-BasicAuth'
 ```
 
 ## Important Note
-An exception is thrown if the username contains a colon (e.g. `:`), as this 
+An exception is thrown if the username contains a colon (e.g. `:`).
 
 ## Created and maintained by
 Created by [Arthur Ariel Sabintsev](http://www.sabintsev.com) for [ID.me, Inc.](http://www.id.me)
