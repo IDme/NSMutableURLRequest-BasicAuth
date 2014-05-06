@@ -9,7 +9,6 @@
 #import <XCTest/XCTest.h>
 #import "NSMutableURLRequest+BasicAuth.h"
 
-
 @interface NSMutableRequest_BasicAuth_Tests : XCTestCase
 
 @end
@@ -19,14 +18,14 @@
 - (void)testSimpleCase
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
-    [NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin" andPassword:@"open sesame"];
+    [NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin" andPassword:@"Open Sesame"];
 	XCTAssertEqualObjects([request valueForHTTPHeaderField:@"Authorization"], @"Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==");
 }
 
 - (void)testInvalidUsername;
 {
 	NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
-	XCTAssertThrows([NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin:2" andPassword:@"open sesame"]);
+	XCTAssertThrows([NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin:2" andPassword:@"Open Sesame"]);
 }
 
 @end

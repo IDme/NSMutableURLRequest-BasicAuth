@@ -12,9 +12,8 @@
 
 + (void)basicAuthForRequest:(NSMutableURLRequest *)request withUsername:(NSString *)username andPassword:(NSString *)password
 {
-    // Complain at invalid usernames
-    if ([username rangeOfString:@":"].location != NSNotFound)
-    {
+    // Check for colon in username
+    if ([username rangeOfString:@":"].location != NSNotFound) {
         [NSException raise:NSInvalidArgumentException format:@"Usernames for HTTP Basic Auth cannot contain a colon character: %@", username];
     }
     
