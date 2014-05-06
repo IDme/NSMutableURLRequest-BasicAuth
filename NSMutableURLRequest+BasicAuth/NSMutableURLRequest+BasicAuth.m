@@ -23,20 +23,20 @@
     CFStringRef passwordRef = (__bridge CFStringRef)password;
     
     // Reference properties of the NSMutableURLRequest
-    CFHTTPMessageRef authoriztionMessageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault, (__bridge CFStringRef)[request HTTPMethod], (__bridge CFURLRef)[request URL], kCFHTTPVersion1_1);
+    CFHTTPMessageRef authorizationMessageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault, (__bridge CFStringRef)[request HTTPMethod], (__bridge CFURLRef)[request URL], kCFHTTPVersion1_1);
     
     // Encodes usernameRef and passwordRef in Base64
-    CFHTTPMessageAddAuthentication(authoriztionMessageRef, nil, usernameRef, passwordRef, kCFHTTPAuthenticationSchemeBasic, FALSE);
+    CFHTTPMessageAddAuthentication(authorizationMessageRef, nil, usernameRef, passwordRef, kCFHTTPAuthenticationSchemeBasic, FALSE);
     
     // Creates the 'Basic - <encoded_username_and_password>' string for the HTTP header
-    CFStringRef authorizationStringRef = CFHTTPMessageCopyHeaderFieldValue(authoriztionMessageRef, CFSTR("Authorization"));
+    CFStringRef authorizationStringRef = CFHTTPMessageCopyHeaderFieldValue(authorizationMessageRef, CFSTR("Authorization"));
     
     // Add authorizationStringRef as value for 'Authorization' HTTP header
     [request setValue:(__bridge NSString *)authorizationStringRef forHTTPHeaderField:@"Authorization"];
     
     // Cleanup
     CFRelease(authorizationStringRef);
-    CFRelease(authoriztionMessageRef);
+    CFRelease(authorizationMessageRef);
     
 }
 

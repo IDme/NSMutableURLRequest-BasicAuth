@@ -14,7 +14,6 @@
 
 @end
 
-
 @implementation NSMutableRequest_BasicAuth_Tests
 
 - (void)testSimpleCase
