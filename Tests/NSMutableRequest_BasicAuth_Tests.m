@@ -19,7 +19,7 @@
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
     [NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin" andPassword:@"Open Sesame"];
-	XCTAssertEqualObjects([request valueForHTTPHeaderField:@"Authorization"], @"Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==");
+	XCTAssertEqualObjects([request valueForHTTPHeaderField:@"Authorization"], @"Basic QWxhZGRpbjpPcGVuIFNlc2FtZQ==");
 }
 
 - (void)testInvalidUsername;

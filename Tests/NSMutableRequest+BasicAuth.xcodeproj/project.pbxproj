@@ -11,8 +11,8 @@
 		278BD6301902837100AE1F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BD62F1902837100AE1F41 /* Foundation.framework */; };
 		278BD6321902837100AE1F41 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278BD6311902837100AE1F41 /* UIKit.framework */; };
 		278BD6381902837100AE1F41 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 278BD6361902837100AE1F41 /* InfoPlist.strings */; };
-		27AA414D190285F000648714 /* NSMutableURLRequest+BasicAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */; };
 		27AA414E1902870100648714 /* NSMutableRequest_BasicAuth_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */; };
+		8E35BA4C191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E35BA4B191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		278BD6371902837100AE1F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMutableRequest_BasicAuth_Tests.m; sourceTree = "<group>"; };
 		278BD63B1902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableRequest+BasicAuth_Tests-Prefix.pch"; sourceTree = "<group>"; };
-		27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+BasicAuth.h"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
-		27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+BasicAuth.m"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
+		8E35BA4A191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+BasicAuth.h"; path = "../NSMutableURLRequest+BasicAuth/NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
+		8E35BA4B191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+BasicAuth.m"; path = "../NSMutableURLRequest+BasicAuth/NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +45,8 @@
 		278BD61F1902831800AE1F41 = {
 			isa = PBXGroup;
 			children = (
-				27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */,
-				27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */,
+				8E35BA4A191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.h */,
+				8E35BA4B191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.m */,
 				278BD6331902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests */,
 				278BD62C1902837100AE1F41 /* Frameworks */,
 				278BD62B1902837000AE1F41 /* Products */,
@@ -151,8 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E35BA4C191BE84A0077B6A7 /* NSMutableURLRequest+BasicAuth.m in Sources */,
 				27AA414E1902870100648714 /* NSMutableRequest_BasicAuth_Tests.m in Sources */,
-				27AA414D190285F000648714 /* NSMutableURLRequest+BasicAuth.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
