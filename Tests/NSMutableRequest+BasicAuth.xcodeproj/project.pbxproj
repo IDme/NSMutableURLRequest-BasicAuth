@@ -24,8 +24,8 @@
 		278BD6371902837100AE1F41 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		278BD6391902837100AE1F41 /* NSMutableRequest_BasicAuth_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMutableRequest_BasicAuth_Tests.m; sourceTree = "<group>"; };
 		278BD63B1902837100AE1F41 /* NSMutableRequest+BasicAuth_Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableRequest+BasicAuth_Tests-Prefix.pch"; sourceTree = "<group>"; };
-		27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+BasicAuth.h"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
-		27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+BasicAuth.m"; path = "../NSMutableRequest+BasicAuth/NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
+		27AA414B190285F000648714 /* NSMutableURLRequest+BasicAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+BasicAuth.h"; path = "../NSMutableURLRequest+BasicAuth/NSMutableURLRequest+BasicAuth.h"; sourceTree = "<group>"; };
+		27AA414C190285F000648714 /* NSMutableURLRequest+BasicAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+BasicAuth.m"; path = "../NSMutableURLRequest+BasicAuth/NSMutableURLRequest+BasicAuth.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
