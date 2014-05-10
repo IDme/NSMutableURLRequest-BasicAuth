@@ -18,7 +18,7 @@
 - (void)testSimpleCase
 {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
-    [NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin" andPassword:@"Open Sesame"];
+    [NSMutableURLRequest basicAuthForRequest:request withUsername:@"Aladdin" andPassword:@"open sesame"];
 	XCTAssertEqualObjects([request valueForHTTPHeaderField:@"Authorization"], @"Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==");
 }
 
