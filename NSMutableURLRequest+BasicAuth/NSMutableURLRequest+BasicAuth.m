@@ -18,11 +18,11 @@
     }
     
     // Cast username and password as CFStringRefs via Toll-Free Bridging
-    CFStringRef usernameRef = (__bridge CFStringRef)username;
-    CFStringRef passwordRef = (__bridge CFStringRef)password;
+    CFStringRef usernameRef = (__bridge_transfer CFStringRef)username;
+    CFStringRef passwordRef = (__bridge_transfer CFStringRef)password;
     
     // Reference properties of the NSMutableURLRequest
-    CFHTTPMessageRef authorizationMessageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault, (__bridge CFStringRef)[request HTTPMethod], (__bridge CFURLRef)[request URL], kCFHTTPVersion1_1);
+    CFHTTPMessageRef authorizationMessageRef = CFHTTPMessageCreateRequest(kCFAllocatorDefault, (__bridge_transfer CFStringRef)[request HTTPMethod], (__bridge CFURLRef)[request URL], kCFHTTPVersion1_1);
     
     // Encodes usernameRef and passwordRef in Base64
     CFHTTPMessageAddAuthentication(authorizationMessageRef, nil, usernameRef, passwordRef, kCFHTTPAuthenticationSchemeBasic, FALSE);
@@ -31,12 +31,7 @@
     CFStringRef authorizationStringRef = CFHTTPMessageCopyHeaderFieldValue(authorizationMessageRef, CFSTR("Authorization"));
     
     // Add authorizationStringRef as value for 'Authorization' HTTP header
-    [request setValue:(__bridge NSString *)authorizationStringRef forHTTPHeaderField:@"Authorization"];
-    
-    // Cleanup
-    CFRelease(authorizationStringRef);
-    CFRelease(authorizationMessageRef);
-    
+    [request setValue:(__bridge_transfer NSString *)authorizationStringRef forHTTPHeaderField:@"Authorization"];
 }
 
 @end
